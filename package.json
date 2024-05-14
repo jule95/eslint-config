@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-jule95",
+  "name": "@jule95/eslint-config-jule95",
   "version": "1.0.1",
   "description": "",
   "main": "eslint.config.js",
@@ -20,6 +20,8 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-import-quotes": "^0.0.1",
+    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6"
   }

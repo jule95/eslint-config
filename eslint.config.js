@@ -31,6 +31,9 @@ module.exports = {
     "object-curly-spacing": [2, `always`],
     "prefer-const": 1,
     "quote-props" :[2, `as-needed`],
+    "react/function-component-definition": [2, {
+      "namedComponents": "arrow-function"
+    }],
     "react/jsx-closing-bracket-location": [2, `after-props`],
     "react/jsx-first-prop-new-line": [2, `multiline-multiprop`],
     "react/jsx-indent": [2, 2],
@@ -45,6 +48,7 @@ module.exports = {
       reservedFirst: true,
       shorthandFirst: true,
     }],
-    "react/jsx-tag-spacing": [2]
+    "react/jsx-tag-spacing": [2],
+    "sort-keys": [2],
   },
 }

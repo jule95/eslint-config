@@ -51,4 +51,7 @@ module.exports = {
     "react/jsx-tag-spacing": [2],
     "sort-keys": [2],
   },
+  settings: {
+    react: { version: `detect` },
+  },
 }

@@ -1,11 +1,12 @@
 {
   "name": "@jule95/eslint-config-jule95",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "eslint.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jule95/eslint-config.git"
@@ -17,12 +18,12 @@
   },
   "homepage": "https://github.com/jule95/eslint-config/#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.30.1",
-    "@typescript-eslint/parser": "^8.30.1",
+    "@eslint/js": "^9.24.0",
     "eslint": "^9.24.0",
     "eslint-plugin-import-quotes": "^0.0.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19"
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "typescript-eslint": "^8.30.1"
   }
 }

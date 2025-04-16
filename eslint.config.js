@@ -6,16 +6,20 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import importQuotes from 'eslint-plugin-import-quotes';
 
 export default [
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  reactRefresh.configs.recommended,
+  reactHooks.configs[`recommended-latest`],
   { ignores: [`dist`] },
   {
-    extends: [
-      eslint.configs.recommended,
-      tseslint.configs.recommended,
-      reactRefresh.configs.recommended,
-      reactHooks.configs[`recommended-latest`],
-    ],
+    files: [`**/*.ts`, `**/*.tsx`, `**/*.js`],
     languageOptions: {
-      globals: { browser: true, es2020: true },
+      globals: {
+        document: `readonly`,
+        navigator: `readonly`,
+        window: `readonly`,
+      },
+      parser: tseslint.parser,
     },
     plugins: {
       'import-quotes': importQuotes,
@@ -35,7 +39,7 @@ export default [
       indent: [2, 2, { SwitchCase: 1 }],
       "no-console": 1,
       "object-curly-spacing": [2, `always`],
-      "prefer-const": 1,
+      "prefer-const": 2,
       "quote-props" :[2, `as-needed`],
       quotes: [2, `backtick`],
       'react-refresh/only-export-components': [
